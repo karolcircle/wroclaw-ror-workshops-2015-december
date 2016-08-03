@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   end
 
   resources :teachers
+
+  resources :visitors
 end
