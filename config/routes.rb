@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   resources :teachers
 
   resources :visitors
+
+  get "report/subjects", to: "reports#subjects"
 end
