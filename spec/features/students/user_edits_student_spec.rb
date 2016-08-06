@@ -19,9 +19,13 @@ feature 'User edits student' do
 
   scenario 'with valid input' do
     fill_in 'First name', with: 'Marcin'
+    select '1950', :from => 'student[birthdate(1i)]'
+    select 'October', :from => 'student[birthdate(2i)]'
+    select '10', :from => 'student[birthdate(3i)]'
     click_button 'Update Student'
     expect(page).to have_content 'Student has been updated!'
     expect(page).to have_content 'Marcin'
+    expect(page).to have_content '1950-10_10'
   end
 
   scenario 'with invalid input' do
