@@ -35,7 +35,7 @@ describe StudentDecorator do
         subject { student.decorate.birthdate_format }
 
         it "returns birthdate in RRRR-MM_DD format" do
-          is_expected.to eq '1900-10_10'
+          is_expected.to eq '1950-10_10'
         end
       end
     end

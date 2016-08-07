@@ -1,0 +1,9 @@
+%h1 Editing payment for
+= @student
+= @payment.student.decorate.full_name
+
+= render 'form'
+
+= link_to 'Show', @payment
+\|
+= link_to 'Back', payments_path
