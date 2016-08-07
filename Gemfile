@@ -21,6 +21,7 @@ gem 'dotenv-rails'
 gem 'gretel'
 gem 'jquery-datatables-rails', '>= 3.4.0'
 gem 'faker'
+gem 'jquery-turbolinks'
 
 group :development do
   gem 'better_errors'

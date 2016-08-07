@@ -1,6 +1,6 @@
 %h1 Listing payments
 
-%table.datatable
+%table.table.table-condensed.datatable
   %thead
     %tr
       %th Paid
@@ -8,8 +8,7 @@
       %th Student first name
       %th Student last name
       %th
-      %th
-      %th
+      %th   
 
   %tbody
     - @payments.each do |payment|
@@ -20,8 +19,7 @@
         %td= payment.student.last_name
         %td= link_to 'Show', payment
         %td= link_to 'Edit', edit_payment_path(payment)
-        %td= link_to 'Destroy', payment, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
+       
 %br
 
 = link_to 'New Payment', new_payment_path

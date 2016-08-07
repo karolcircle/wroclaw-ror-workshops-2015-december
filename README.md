@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/karolcircle/wroclaw-ror-workshops-2015-december.svg?branch=master)](https://travis-ci.org/karolcircle/wroclaw-ror-workshops-2015-december)
 
+Working app: https://evening-ravine-99927.herokuapp.com/
+
 
 RoR Workshops
 ================
