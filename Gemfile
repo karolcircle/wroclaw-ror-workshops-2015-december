@@ -19,6 +19,8 @@ gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 gem 'dotenv-rails'
 gem 'gretel'
+gem 'jquery-datatables-rails', '>= 3.4.0'
+gem 'faker'
 
 group :development do
   gem 'better_errors'
@@ -26,13 +28,12 @@ group :development do
   gem 'hub', require: nil
   gem 'rails_layout'
   gem 'spring-commands-rspec'
-  gem 'quiet_assets'
+  gem 'quiet_assets'  
 end
 
 group :development, :test do
   gem 'byebug'
   gem 'factory_girl_rails'
-  gem 'faker'
   gem 'rspec-rails'
   gem 'spring'
   gem 'web-console', '~> 2.0'

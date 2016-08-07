@@ -1,6 +1,7 @@
 puts "Seeds: start"
 TEACHER_TITLES = %w(Dr. Prof. TA)
 PAYMENT_STATUS = %w(paid unpaid)
+DATES_INPUT = %w(2016-10-10 2016-11-10 2016-12-10 )
 User.create!(email: 'admin@admin.com',password: 'adminadmin')
 
 3.times do
@@ -41,12 +42,14 @@ SubjectItem.all.each do |subject_item|
   end
 end
 
-15.times do
-  Payment.create!(
-    paid: PAYMENT_STATUS.sample, 
-    date_payment: Faker::Date.between(2.years.ago, 1.year.from_now),
-    student_id: rand(1..25)
-  )
+2.times do
+  students.each do |student|
+    Payment.create!(
+      paid: PAYMENT_STATUS.sample, 
+      student: student,
+      date_payment: DATES_INPUT.sample
+    )
+  end
 end
 
 payments = Payment.all
